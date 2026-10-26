@@ -509,7 +509,7 @@ Tasks:
 
 - [x] K: create the repo, MIT `LICENSE`, pnpm workspace, `tsconfig.base.json`, eslint, prettier, vitest workspace.
 - [x] K: `.github/workflows/ci.yml` running install, typecheck, lint, test, build, with a Postgres service.
-- [ ] S: `docker-compose.yml` (Postgres), `.env.example`, `apps/web` scaffold with a hello AG Grid.
+- [x] S: `docker-compose.yml` (Postgres), `.env.example`, `apps/web` scaffold with a hello AG Grid.
 - [ ] K: PayPal developer account, one business and one buyer sandbox account, one REST app with Disputes enabled. Save the client ID and secret in a password manager, not in the repo.
 - [ ] K: Render Postgres plus web service from the repo. Deploy a hello world to get a public URL.
 - [ ] S: read the Official Rules and judging criteria. Write a short summary in `docs/submission.md` and fix section 4 of this file.

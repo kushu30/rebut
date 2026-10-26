@@ -9,4 +9,11 @@ export default defineWorkspace([
       exclude: ['**/test/sandbox/**', '**/node_modules/**'],
     },
   },
+  {
+    test: {
+      name: 'web',
+      environment: 'jsdom',
+      include: ['apps/web/test/**/*.test.tsx'],
+    },
+  },
 ]);
