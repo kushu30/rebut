@@ -494,7 +494,7 @@ Code rules:
 - Small diffs. One concern per pull request. Do not reformat files you did not need to touch.
 - No `any`. No default exports except where a framework requires them.
 - Pure logic in `packages/core`. Side effects at the edges.
-- Commit messages: short, professional, start with ADD, FIX or CHORE. Example: `ADD webhook signature verification`.
+- Commit messages: Conventional Commits, short and lowercase. Types: feat, fix, chore, docs, test, refactor, ci. Optional scope. Example: `feat(paypal): verify webhook signature`.
 - Pull requests need green CI and one review. Squash merge. Branch names: `feat/...`, `fix/...`, `chore/...`.
 
 ## 8. Phases
@@ -507,7 +507,7 @@ Each phase lists the working outcome you can show, the tasks, the tests, and an 
 
 Tasks:
 
-- [ ] K: create the repo, MIT `LICENSE`, pnpm workspace, `tsconfig.base.json`, eslint, prettier, vitest workspace.
+- [x] K: create the repo, MIT `LICENSE`, pnpm workspace, `tsconfig.base.json`, eslint, prettier, vitest workspace.
 - [ ] K: `.github/workflows/ci.yml` running install, typecheck, lint, test, build, with a Postgres service.
 - [ ] S: `docker-compose.yml` (Postgres), `.env.example`, `apps/web` scaffold with a hello AG Grid.
 - [ ] K: PayPal developer account, one business and one buyer sandbox account, one REST app with Disputes enabled. Save the client ID and secret in a password manager, not in the repo.
@@ -825,7 +825,7 @@ Read PLAN.md before starting any task. Work on one task at a time.
 - Never fabricate evidence. Every sentence sent to PayPal must cite a stored fact.
 - Every PayPal write must be idempotent and respect REBUT_DRY_RUN.
 - Use the PayPal mock in tests. Never call the network in CI.
-- Commit messages: short and professional, starting with ADD, FIX or CHORE.
+- Commit messages use Conventional Commits: feat, fix, chore, docs, test, refactor, ci. Short, lowercase, no phase numbers.
 
 ## Definition of done
 
