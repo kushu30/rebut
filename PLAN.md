@@ -518,7 +518,7 @@ Tasks:
 
 Tests:
 
-- [ ] API `/health` returns 200.
+- [x] API `/health` returns 200.
 
 Exit gate: CI green on `main`. Public URL returns 200 on `/health`.
 
