@@ -1,0 +1,22 @@
+{
+  "name": "@rebut/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1"
+  },
+  "dependencies": {
+    "@rebut/core": "workspace:*",
+    "express": "^5.3.0",
+    "tsx": "^4.23.15"
+  }
+}
