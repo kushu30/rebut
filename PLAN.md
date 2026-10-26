@@ -508,7 +508,7 @@ Each phase lists the working outcome you can show, the tasks, the tests, and an 
 Tasks:
 
 - [x] K: create the repo, MIT `LICENSE`, pnpm workspace, `tsconfig.base.json`, eslint, prettier, vitest workspace.
-- [ ] K: `.github/workflows/ci.yml` running install, typecheck, lint, test, build, with a Postgres service.
+- [x] K: `.github/workflows/ci.yml` running install, typecheck, lint, test, build, with a Postgres service.
 - [ ] S: `docker-compose.yml` (Postgres), `.env.example`, `apps/web` scaffold with a hello AG Grid.
 - [ ] K: PayPal developer account, one business and one buyer sandbox account, one REST app with Disputes enabled. Save the client ID and secret in a password manager, not in the repo.
 - [ ] K: Render Postgres plus web service from the repo. Deploy a hello world to get a public URL.
