@@ -1,0 +1,66 @@
+{
+  "case": {
+    "id": "PP-D-1002",
+    "transactionId": "TXN-SANDBOX-2",
+    "reason": "MERCHANDISE_OR_SERVICE_NOT_RECEIVED",
+    "stage": "CHARGEBACK",
+    "status": "AWAITING_APPROVAL",
+    "paypalStatus": "WAITING_FOR_SELLER_RESPONSE",
+    "amount": 3,
+    "currency": "USD",
+    "sellerProtectionEligible": true,
+    "sellerResponseDueDate": "2026-11-03T09:00:00.000Z",
+    "allowedActions": ["PROVIDE_EVIDENCE", "MAKE_OFFER", "ACCEPT_CLAIM"],
+    "requestedEvidence": ["PROOF_OF_FULFILLMENT"],
+    "buyerMessage": "I never received my order.",
+    "createdAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z"
+  },
+  "facts": [
+    {
+      "id": "order-2",
+      "label": "Order number",
+      "value": "ORD-1002",
+      "source": "store.order"
+    },
+    {
+      "id": "carrier-2",
+      "label": "Carrier",
+      "value": "UPS",
+      "source": "store.shipment"
+    },
+    {
+      "id": "tracking-2",
+      "label": "Tracking number",
+      "value": "1Z999AA100000002",
+      "source": "store.shipment"
+    },
+    {
+      "id": "delivered-2",
+      "label": "Delivered at",
+      "value": "2026-10-15T14:20:00.000Z",
+      "source": "store.shipment.events"
+    },
+    {
+      "id": "address-2",
+      "label": "Delivery address matches order",
+      "value": "yes",
+      "source": "store.order"
+    }
+  ],
+  "recommendation": {
+    "caseId": "PP-D-1002",
+    "action": "ACCEPT",
+    "tier": "LOW",
+    "reasons": [
+      {
+        "rule": "economics",
+        "message": "Amount 3 is below the fold floor of 5.",
+        "factIds": []
+      }
+    ],
+    "needs": [],
+    "completeness": 1,
+    "urgent": false
+  }
+}

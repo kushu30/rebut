@@ -513,7 +513,7 @@ Tasks:
 - [ ] K: PayPal developer account, one business and one buyer sandbox account, one REST app with Disputes enabled. Save the client ID and secret in a password manager, not in the repo.
 - [ ] K: Render Postgres plus web service from the repo. Deploy a hello world to get a public URL.
 - [ ] S: read the Official Rules and judging criteria. Write a short summary in `docs/submission.md` and fix section 4 of this file.
-- [ ] K and S together, one session, day one: write the shared contracts from section 11.1 and merge them before anything else.
+- [x] K and S together, one session, day one: write the shared contracts from section 11.1 and merge them before anything else.
 - [ ] K and S: both get the PayPal sandbox credentials, Render access and repo write access on day one.
 
 Tests:

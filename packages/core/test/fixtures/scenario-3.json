@@ -1,0 +1,53 @@
+{
+  "case": {
+    "id": "PP-D-1003",
+    "transactionId": "TXN-SANDBOX-3",
+    "reason": "MERCHANDISE_OR_SERVICE_NOT_AS_DESCRIBED",
+    "stage": "CHARGEBACK",
+    "status": "AWAITING_APPROVAL",
+    "paypalStatus": "WAITING_FOR_SELLER_RESPONSE",
+    "amount": 60,
+    "currency": "USD",
+    "sellerProtectionEligible": true,
+    "sellerResponseDueDate": "2026-11-03T09:00:00.000Z",
+    "allowedActions": ["PROVIDE_EVIDENCE", "MAKE_OFFER", "ACCEPT_CLAIM"],
+    "requestedEvidence": ["PROOF_OF_FULFILLMENT"],
+    "buyerMessage": "The item does not match the listing.",
+    "createdAt": "2026-10-20T09:00:00.000Z",
+    "updatedAt": "2026-10-20T09:00:00.000Z"
+  },
+  "facts": [
+    {
+      "id": "order-3",
+      "label": "Order number",
+      "value": "ORD-1003",
+      "source": "store.order"
+    },
+    {
+      "id": "listing-3",
+      "label": "Listing title",
+      "value": "Ceramic pour-over set",
+      "source": "store.catalog"
+    }
+  ],
+  "recommendation": {
+    "caseId": "PP-D-1003",
+    "action": "OFFER_REFUND",
+    "tier": "LOW",
+    "reasons": [
+      {
+        "rule": "completeness",
+        "message": "Item condition evidence is missing.",
+        "factIds": ["order-3"]
+      },
+      {
+        "rule": "choose",
+        "message": "Dispute allows a refund offer and evidence is incomplete.",
+        "factIds": []
+      }
+    ],
+    "needs": ["Item condition photos"],
+    "completeness": 0.5,
+    "urgent": false
+  }
+}
